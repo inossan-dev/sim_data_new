@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Flutter needs internet permission for hot reload and
+    tools to work. We remove this permission when building the app
+    for release -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

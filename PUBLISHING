@@ -1,0 +1,107 @@
+# Guide de publication sur pub.dev
+
+Ce document fournit les instructions pour publier la version mise à jour du plugin SIM Data sur pub.dev.
+
+## Préparation à la publication
+
+Avant de publier votre package, assurez-vous que:
+
+1. Tous les fichiers nécessaires sont à jour:
+   - `pubspec.yaml` avec la version correcte (0.1.0)
+   - `README.md` avec la documentation à jour
+   - `CHANGELOG.md` avec les modifications de la dernière version
+   - `LICENSE` avec les informations de licence à jour
+
+2. La structure du projet est conforme aux normes de pub.dev:
+   ```
+   sim_data/
+   ├── android/        # Code natif Android
+   ├── example/        # Projet d'exemple
+   ├── lib/            # Code Dart
+   ├── test/           # Tests (si disponibles)
+   ├── CHANGELOG.md
+   ├── LICENSE
+   ├── README.md
+   └── pubspec.yaml
+   ```
+
+3. La version de votre plugin est correctement incrémentée selon les règles semver:
+   - Changements majeurs: incrémenter le premier chiffre (x.0.0)
+   - Nouvelles fonctionnalités compatibles: incrémenter le deuxième chiffre (0.x.0)
+   - Corrections de bugs: incrémenter le troisième chiffre (0.0.x)
+
+## Vérification du package
+
+Avant de publier, vérifiez que votre package est conforme aux normes de pub.dev:
+
+```bash
+cd sim_data
+flutter pub publish --dry-run
+```
+
+Cette commande vérifiera votre package et vous indiquera s'il y a des problèmes à résoudre avant la publication.
+
+## Résolution des problèmes courants
+
+### Fichiers manquants ou incomplets
+
+Si pub.dev signale des fichiers manquants ou incomplets:
+- Vérifiez que README.md, CHANGELOG.md et LICENSE sont présents
+- Assurez-vous que pubspec.yaml contient toutes les informations requises
+- Vérifiez les liens dans la documentation
+
+### Problèmes de format
+
+Si pub.dev signale des problèmes de format:
+- Utilisez `flutter format` pour formater votre code Dart
+- Vérifiez la syntaxe de votre Markdown avec un linter Markdown
+
+### Problèmes de dépendances
+
+Si pub.dev signale des problèmes de dépendances:
+- Assurez-vous que toutes les dépendances sont spécifiées avec des versions appropriées
+- Évitez d'utiliser des dépendances à des versions spécifiques sauf si nécessaire
+
+## Publication du package
+
+Une fois que vous avez résolu tous les problèmes, vous pouvez publier votre package:
+
+```bash
+flutter pub publish
+```
+
+Vous devrez peut-être vous connecter à votre compte pub.dev lors de la première publication.
+
+## Après la publication
+
+Après avoir publié votre package, vérifiez:
+
+1. La page de votre package sur pub.dev pour vous assurer que tout est correct
+2. La score de pub.dev pour voir si des améliorations sont recommandées
+3. L'exemple d'utilisation pour confirmer qu'il fonctionne avec la version publiée
+
+## Mise à jour de la documentation GitHub
+
+N'oubliez pas de mettre à jour votre dépôt GitHub avec les mêmes modifications:
+
+```bash
+git add .
+git commit -m "Update to version 0.1.0"
+git tag -a v0.1.0 -m "Version 0.1.0"
+git push
+git push --tags
+```
+
+## Promotion du package
+
+Pour promouvoir votre package mise à jour:
+
+1. Annoncez la mise à jour sur les plateformes pertinentes:
+   - Twitter/X
+   - LinkedIn
+   - Discord Flutter
+   - Reddit r/FlutterDev
+
+2. Écrivez un article de blog ou Medium expliquant les améliorations
+
+3. Répondez aux issues ouvertes sur GitHub avec des informations sur la mise à jour
