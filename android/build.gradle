@@ -35,3 +35,13 @@ android {
 
     namespace 'com.ino.sim_data_new'
 }
+
+dependencies {
+    // Ajout des dépendances manquantes
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.core:core:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    // Ces deux lignes ci-dessous sont essentielles pour le plugin Flutter
+    compileOnly 'io.flutter:flutter_embedding_debug:1.0.0-a4ff2c53d84ca78702bc3be6c7ef0788ffca01d3'
+    compileOnly 'io.flutter:armeabi_v7a_debug:1.0.0-a4ff2c53d84ca78702bc3be6c7ef0788ffca01d3'
+}
