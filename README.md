@@ -1,7 +1,5 @@
 # SIM Data
 
-[![pub package](https://img.shields.io/pub/v/sim_data.svg)](https://pub.dev/packages/sim_data)
-
 Un plugin Flutter pour récupérer les informations des cartes SIM sur Android (support multi-SIM).
 
 ## Fonctionnalités
