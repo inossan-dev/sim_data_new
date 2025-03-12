@@ -48,14 +48,6 @@ public class SimDataPlugin implements FlutterPlugin, MethodCallHandler, Activity
     channel.setMethodCallHandler(this);
   }
 
-  public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
-    SimDataPlugin instance = new SimDataPlugin();
-    instance.initialize(registrar.messenger(), registrar.context());
-    if (registrar.activity() != null) {
-      instance.activity = registrar.activity();
-    }
-  }
-
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
     channel.setMethodCallHandler(null);

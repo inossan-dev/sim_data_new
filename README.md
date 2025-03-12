@@ -13,7 +13,7 @@ Un plugin Flutter pour récupérer les informations des cartes SIM sur Android (
 
 ```yaml
 dependencies:
-  sim_data_new: ^1.0.0
+  sim_data_new: ^1.0.1
 ```
 
 Puis exécutez:

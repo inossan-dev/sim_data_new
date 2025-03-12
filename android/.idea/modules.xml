@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sim_data_new.iml" filepath="$PROJECT_DIR$/.idea/modules/sim_data_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sim_data_new.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sim_data_new.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sim_data_new.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sim_data_new.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sim_data_new.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sim_data_new.unitTest.iml" />
+    </modules>
+  </component>
+</project>
