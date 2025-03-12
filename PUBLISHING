@@ -7,7 +7,7 @@ Ce document fournit les instructions pour publier la version mise à jour du plu
 Avant de publier votre package, assurez-vous que:
 
 1. Tous les fichiers nécessaires sont à jour:
-   - `pubspec.yaml` avec la version correcte (0.1.0)
+   - `pubspec.yaml` avec la version correcte (1.0.1)
    - `README.md` avec la documentation à jour
    - `CHANGELOG.md` avec les modifications de la dernière version
    - `LICENSE` avec les informations de licence à jour
@@ -91,17 +91,3 @@ git tag -a v0.1.0 -m "Version 0.1.0"
 git push
 git push --tags
 ```
-
-## Promotion du package
-
-Pour promouvoir votre package mise à jour:
-
-1. Annoncez la mise à jour sur les plateformes pertinentes:
-   - Twitter/X
-   - LinkedIn
-   - Discord Flutter
-   - Reddit r/FlutterDev
-
-2. Écrivez un article de blog ou Medium expliquant les améliorations
-
-3. Répondez aux issues ouvertes sur GitHub avec des informations sur la mise à jour
